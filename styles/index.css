@@ -90,29 +90,32 @@ body {
   width: 100%;
   min-height: 100vh;
   padding: 100px;
-  position: fixed;
+  position: relative;
   top: 0;
+  margin: auto;
   transition: 1s;
 }
 
 .project-heading {
   font-size: 100px;
-  background: #252525;
+  font-weight: 100;
+  background: #dededeb8;
   text-transform: capitalize;
   text-align: center;
   margin-bottom: 50px;
-  color: #1a1a1a;
+  color: #191919;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-stroke: 8px transparent;
 }
 .project-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 100px;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 .project-card {
-  height: 400px;
+  display: none;
+  height: 600px;
   position: relative;
 }
 .project-img {
@@ -126,10 +129,16 @@ body {
 }
 .project-content {
   position: relative;
-  padding: 40px;
-  color: #fff;
+  padding: 50px;
   transition: 0.5s;
   opacity: 0;
+}
+.one {
+  color: #fff;
+}
+.two,
+.three {
+  color: #000;
 }
 .project-title {
   font-size: 50px;
@@ -158,12 +167,85 @@ body {
   cursor: pointer;
 }
 .project-btn.live {
-  background: none;
-  border: 2px solid #fff;
+  background: rgb(25, 110, 255);
+  border: 2px solid rgb(25, 110, 255);
+  color: #fff;
 }
 .project-card:hover .project-img {
   filter: blur(20px);
 }
 .project-card:hover .project-content {
   opacity: 1;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(84, 84, 84);
+  font-weight: bold;
+  font-size: 38px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgb(25, 110, 255);
+  color: #fff;
+}
+.numbertext {
+  color: #f2f2f200;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  opacity: 0.8;
+}
+.dot.active,
+.dot:hover {
+  background-color: rgb(25, 110, 255);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
