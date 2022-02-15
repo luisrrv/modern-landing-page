@@ -93,11 +93,17 @@ body {
 
 .project-section {
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   padding: 100px;
-  position: relative;
+  position: fixed;
   top: 0;
+  left: 0;
   margin: auto;
+  background-image: url(/assets/p-bg.jpeg);
+  background-size: cover;
+  overflow: visible;
+  background-repeat: no-repeat;
+  background-position-x: center;
   transition: 0.5s;
   opacity: 0;
 }
