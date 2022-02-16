@@ -122,7 +122,7 @@ body {
   -webkit-text-stroke: 8px transparent;
 }
 .project-container {
-  max-width: 2000px;
+  max-width: 1500px;
   position: relative;
   margin: auto;
   height: 50vh;
@@ -180,14 +180,20 @@ body {
   text-transform: capitalize;
   font-size: 18px;
   border: none;
-  background: #000;
+  background: rgb(0, 0, 0);
   color: #fff;
   cursor: pointer;
 }
+.project-btn:hover {
+  background: #191919;
+}
 .project-btn.live {
-  background: rgb(25, 110, 255);
-  border: 2px solid rgb(25, 110, 255);
+  background: rgb(25, 109, 255);
+  border: none;
   color: #fff;
+}
+.project-btn.live:hover {
+  background: rgb(25, 109, 255);
 }
 .project-card:hover .project-img {
   filter: blur(20px);
@@ -275,14 +281,14 @@ body {
   font-size: 22px;
   display: block;
   margin: auto;
-  background: rgba(25, 109, 255, 0);
-  border: 2px solid rgb(25, 110, 255);
-  color: rgb(25, 110, 255);
+  background: rgb(25, 110, 255);
+  border: none;
+  color: #fff;
   cursor: pointer;
   border-radius: 2px;
   padding: 0.5em;
 }
 .see-all-btn:hover {
-  background-color: rgb(25, 110, 255);
+  background-color: rgb(0, 86, 233);
   color: #fff;
 }
