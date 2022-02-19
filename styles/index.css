@@ -10,7 +10,7 @@ body {
   display: block;
   margin: auto;
   min-height: 100vh;
-  background-image: url(/assets/bg.jpg);
+  background-image: url(/assets/code-bg.jpg);
   background-size: cover;
   overflow: visible;
   background-repeat: no-repeat;
@@ -81,7 +81,7 @@ ul {
 }
 
 .hero-heading {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 115, 255);
   font-size: 150px;
   background: #000;
   font-weight: 100;
