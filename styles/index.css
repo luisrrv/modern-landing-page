@@ -55,7 +55,7 @@ ul {
 .link a:hover,
 .link.active a {
   opacity: 1;
-  color: rgb(255, 255, 255);
+  color: rgb(38, 143, 255);
   text-shadow: 0 0 10px #007ce9, 0px 2px 2px rgba(0, 0, 0, 0);
 }
 
@@ -84,7 +84,7 @@ ul {
   padding: 10px;
 }
 .hero-heading {
-  color: rgb(0, 102, 255);
+  color: rgb(0, 123, 255);
   font-size: 150px;
   background: #000;
   font-weight: 100;
